@@ -17,8 +17,10 @@
             <!-- side-navigation area here  -->
             <div class="dev-side-nav">
                 <nav>
-                    <div class="dev-image">
-                        <img src="/images/profile/developer-prof.png" alt="">
+                    <div class="dev-profile">
+                        <div class="dev-image">
+                            <img src="/images/profile/developer-prof.png" alt="developer-shakil">
+                        </div>
                     </div>
                     <menu>
                         <ul>
@@ -35,12 +37,36 @@
             <!-- side-navigation end here  -->
             <div class="dev-side-sections">
                 <!-- hero section start here  -->
-                <section class="dev-hero"></section>
+                <section class="dev-hero">
+                    <div class="dev-hero-content">
+                        <h3>Hello,</h3>
+                        <h1>I'M Shakil Miah.</h1>
+                        <p>I'm a <span class="auto-type"></span></p>
+                        <div class="dev-hero-btn">
+                            <button>CONTACE ME</button>
+                        </div>
+                    </div>
+                </section>
                 <!-- hero-section end here  -->
             </div>
         </div>
     </div>
     <!-- header area end  -->
+
+
+    <!-- load here typed efecct js cdn  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- typed effect declare here  -->
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Web Developer", "Frontend Developer", "Web Designer", "Wordpress Designer", "Coder"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+    <!-- typed effect declare end here  -->
 </body>
 
 </html>
