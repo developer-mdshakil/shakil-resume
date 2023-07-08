@@ -393,6 +393,7 @@ span {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.8rem;
+    text-align: justify;
 }
 
 .about_me_text ul {
@@ -443,16 +444,29 @@ span {
     width: 49%;
     height: auto;
     margin-left: 2rem;
-    margin-right: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.about_me_image::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: rgb(51, 49, 49);
+    z-index: -1;
+    filter: blur(10px);
 }
 
 .about_me_image img {
     width: 100%;
     height: auto;
-    margin-left: 2rem;
-    box-shadow: 10px 10px 20px #46454d,
-        -10px 10px -20px #423f58;
-    border: 1rem solid #070a1c;
+    box-shadow: 10px 10px 20px #1b1280,
+        -10px 10px -20px #331f74;
 }
 
 /* about-section stylesheet end here  */
