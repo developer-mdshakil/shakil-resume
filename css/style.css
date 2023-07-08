@@ -234,7 +234,7 @@ span {
     font-weight: 500;
     cursor: pointer;
     border-radius: 4px;
-    box-shadow: 6px 6px 10px #1c1a27, -6px 6px -10px #211f2e;
+    box-shadow: 10px 10px 20px #46454d, -10px 10px -20px #423f58;
     transition: all .5s ease-in-out;
 }
 
@@ -248,24 +248,100 @@ span {
 .dev_features_section {
     background-color: #161420;
     color: white;
-    padding: 5rem 1rem;
+    padding: 5rem 2rem;
 }
 
-.features_title {
+.hero-title {
     text-align: center;
+    margin-bottom: 3rem;
 }
 
-.features_title h5 {
+.hero-title h5 {
     font-size: 1rem;
     font-weight: 500;
     color: #ff5200;
 }
 
-.features_title h2 {
+.hero-title h2 {
     font-size: 4rem;
     font-weight: 600;
     color: white;
     margin-top: 1rem;
+}
+
+.dev_single_features_card {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    background: #211f2e;
+    transition: all .5s ease-in-out;
+}
+
+.dev_single_features_card:hover {
+    transform: translateY(-4px);
+}
+
+.dev_feature_card_img {
+    width: 35%;
+    height: 100%;
+}
+
+.dev_feature_card_img img {
+    width: 100%;
+    height: 22rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.dev_features_card_body {
+    width: 65%;
+    position: relative;
+}
+
+.dev_sg_card_title {
+    margin-left: 1.1rem;
+    margin-top: 5rem;
+}
+
+.dev_sg_card_title h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.dev_sg_card_title p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    width: 540px;
+    color: #b3b0b0;
+    line-height: 1.8rem;
+    text-align: justify;
+    transition: .5s;
+}
+
+.dev_single_features_card:hover p {
+    color: white;
+}
+
+.dev_sg_card_title p i {
+    color: #ff5200;
+    position: relative;
+    top: 0.4rem;
+    margin-left: 0.8rem;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dev_sg_card_title:hover i {
+    visibility: visible;
+    opacity: 1;
+}
+
+.feature-btn {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
 }
 
 /* dev_features_section stylesheet end here  */
