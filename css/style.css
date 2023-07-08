@@ -345,3 +345,114 @@ span {
 }
 
 /* dev_features_section stylesheet end here  */
+/* about-section stylesheet start here  */
+.about-section {
+    background-color: #161420;
+    color: white;
+    padding: 5rem 2rem;
+}
+
+.about_page_wrraper {
+    display: flex;
+}
+
+.about_me_text {
+    width: 50%;
+    height: auto;
+    margin-top: 4rem;
+}
+
+.about_me_text h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.about_me_text h3 span {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    background: #ff5200;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    position: relative;
+    bottom: 0.2rem;
+}
+
+.about_me_text h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ff5200;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about_me_text p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+.about_me_text ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.about_me_text ul li {
+    padding: 0.5rem 0;
+}
+
+.about_me_text ul li span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: blue;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.about_me_text ul li strong {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.about_me_text ul a {
+    display: block;
+    padding: 0.5rem;
+}
+
+.about_me_text ul a span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: blue;
+    margin-right: 0.5rem;
+}
+
+.about_me_text ul a strong {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.about_me_image {
+    width: 49%;
+    height: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.about_me_image img {
+    width: 100%;
+    height: auto;
+    margin-left: 2rem;
+    box-shadow: 10px 10px 20px #46454d,
+        -10px 10px -20px #423f58;
+    border: 1rem solid #070a1c;
+}
+
+/* about-section stylesheet end here  */
