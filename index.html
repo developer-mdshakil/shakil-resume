@@ -15,8 +15,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
 
-    <!-- fontawsome google link  -->
-    <script src="https://kit.fontawesome.com/7040b42bf0.js" crossorigin="anonymous"></script>
+    <!-- typed effect js link  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <!-- main-stylesheet link up here  -->
     <link rel="stylesheet" href="css/style.css">
@@ -51,13 +51,36 @@
             <!-- banner-section start here  -->
             <section class="dev-banner">
                 <div class="dev_banner_title">
-
+                    <h3>Hello,</h3>
+                    <h1>I'M Shakil Miah</h1>
+                    <h4>I'm <span class="auto-type"></span></h4>
+                    <button class="contact-btn hero-btn">CONTACT ME</button>
+                    <button class="hire-btn hero-btn">HIRE ME</button>
                 </div>
             </section>
             <!-- banner-section end here  -->
+            <!-- features-section start here  -->
+            <section class="dev_features_section">
+                <div class="features_title">
+                    <h5>FEATURES</h5>
+                    <h2>What I Do?</h2>
+                </div>
+            </section>
+            <!-- features-section end here  -->
             <!-- end section widgeth  -->
         </div>
     </div>
+
+    <!-- fontawsome google link  -->
+    <script src="https://kit.fontawesome.com/7040b42bf0.js" crossorigin="anonymous"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Web Developer..", "Developer..", "Web Designer..", "Forntend Developer..", "Professional Coder"],
+            typeSpeed: 180,
+            backSpeed: 180,
+            loop: true
+        })
+    </script>
 </body>
 
 </html>

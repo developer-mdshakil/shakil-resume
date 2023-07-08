@@ -169,3 +169,103 @@ span {
     width: 100%;
     margin-left: 18rem;
 }
+
+/**** dev-banner section stylesheet here  ****/
+.dev-banner {
+    background-image: url(/images/banner-bg/banner-bg.avif);
+    background-size: cover;
+    background-position: center;
+    padding: 14rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.dev-banner::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #070a1c96;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.dev_banner_title h3 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: blue;
+}
+
+.dev_banner_title h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    color: white;
+}
+
+.dev_banner_title h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.dev_banner_title h4 span {
+    color: #ff5200;
+}
+
+.contact-btn {
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+}
+
+.hire-btn {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+}
+
+.hero-btn {
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    background: #070a1c;
+    color: #ff5200;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 6px 6px 10px #1c1a27, -6px 6px -10px #211f2e;
+    transition: all .5s ease-in-out;
+}
+
+.hero-btn:hover {
+    transform: translateY(-4px);
+    color: blue;
+}
+
+/**** dev-banner section stylesheet end here  ****/
+/* dev_features_section stylesheet start here  */
+.dev_features_section {
+    background-color: #161420;
+    color: white;
+    padding: 5rem 1rem;
+}
+
+.features_title {
+    text-align: center;
+}
+
+.features_title h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ff5200;
+}
+
+.features_title h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* dev_features_section stylesheet end here  */
