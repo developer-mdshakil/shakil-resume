@@ -516,7 +516,7 @@ span {
     margin-bottom: 2rem;
 }
 
-.education_common_card {
+.common_card {
     padding: 2rem;
     box-shadow: -2px 0px 6px 5px #040404;
     position: relative;
@@ -526,23 +526,24 @@ span {
     transition: all .5s ease-in-out;
 }
 
-.education_common_card:hover {
+.common_card:hover {
     transform: translateY(-4px);
+    background-color: #00000052;
 }
 
-.education_common_card h4 {
+.common_card h4 {
     font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 0.7rem;
 }
 
-.education_common_card h6 {
+.common_card h6 {
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 4rem;
 }
 
-.education_common_card p {
+.common_card p {
     font-size: 1.5rem;
     width: 400px;
     font-weight: 500;
@@ -552,7 +553,7 @@ span {
     transition: all .5s ease-in-out;
 }
 
-.education_common_card:hover p {
+.common_card:hover p {
     color: white;
 }
 
@@ -568,3 +569,104 @@ span {
 /* about_education stylesheet end  */
 
 /* about-section stylesheet end here  */
+/* portfolio_section stylesheet here  */
+.portfolio_section {
+    background-color: #161420;
+    color: white;
+    padding: 5rem 2rem;
+}
+
+.portfolio_wrraper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.portfolio_card {
+    padding: 2rem;
+    box-shadow: -2px 0px 6px 5px #040404;
+    border-radius: 5px;
+    position: relative;
+}
+
+.portfolio_card .more_info {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #070a1c;
+    position: absolute;
+    right: 2.5rem;
+    top: 2rem;
+    z-index: 1;
+}
+
+.portfolio_card .Web_design_image {
+    width: 100%;
+    height: 15rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.Web_design_image img {
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+}
+
+.Web_design_image:hover img {
+    transform: scale(1.2);
+}
+
+.portfolio_timline_comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio_timline_comment h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ff5200;
+}
+
+.portfolio_timline_comment h5 a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ff5200;
+    text-decoration: none;
+}
+
+.portfolio_timline_comment h5 span {
+    color: white;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.portfolio_content p {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.portfolio_card:hover p {
+    color: #ff5200;
+}
+
+.portfolio_content p a {
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.portfolio_card:hover .portfolio_content p a {
+    opacity: 1;
+    visibility: visible;
+    color: #ff5200;
+}
+
+
+/* portfolio_section stylesheet end here  */
