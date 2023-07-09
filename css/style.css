@@ -354,12 +354,29 @@ span {
 
 .about_page_wrraper {
     display: flex;
+    margin-bottom: 6rem;
 }
 
 .about_me_text {
     width: 50%;
     height: auto;
-    margin-top: 4rem;
+    padding: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.about_me_text::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -2px;
+    right: -2px;
+    bottom: 2px;
+    background-color: rgb(7, 7, 7);
+    z-index: -1;
+    filter: blur(10px)
 }
 
 .about_me_text h3 {
@@ -445,6 +462,9 @@ span {
     height: auto;
     margin-left: 2rem;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
 }
 
@@ -453,20 +473,98 @@ span {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: -2px;
+    top: 2px;
     left: -2px;
     right: -2px;
-    bottom: -2px;
-    background-color: rgb(51, 49, 49);
+    bottom: 2px;
+    background-color: rgb(7, 7, 7);
     z-index: -1;
     filter: blur(10px);
 }
 
 .about_me_image img {
-    width: 100%;
+    width: 80%;
     height: auto;
     box-shadow: 10px 10px 20px #1b1280,
         -10px 10px -20px #331f74;
+    transition: all .5s;
 }
+
+.about_me_image:hover img {
+    transform: translateY(-4px);
+}
+
+/* about_education stylesheet  */
+.about_education {}
+
+.education_wrraper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.edu_qulafication_title h6 {
+    color: #ff5200;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.edu_qulafication_title h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.education_common_card {
+    padding: 2rem;
+    box-shadow: -2px 0px 6px 5px #040404;
+    position: relative;
+    margin-bottom: 3.5rem;
+    width: 100%;
+    height: 22rem;
+    transition: all .5s ease-in-out;
+}
+
+.education_common_card:hover {
+    transform: translateY(-4px);
+}
+
+.education_common_card h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+
+.education_common_card h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.education_common_card p {
+    font-size: 1.5rem;
+    width: 400px;
+    font-weight: 500;
+    color: #b1b1b1;
+    line-height: 1.9rem;
+    text-align: justify;
+    transition: all .5s ease-in-out;
+}
+
+.education_common_card:hover p {
+    color: white;
+}
+
+.edu_btn {
+    position: absolute;
+    right: 2rem;
+    top: 42%;
+    box-shadow: 4px 0px 13px #000;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* about_education stylesheet end  */
 
 /* about-section stylesheet end here  */
