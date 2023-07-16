@@ -781,3 +781,160 @@ span {
 }
 
 /* blog_section stylesheet end here  */
+/* contact_section stylesheet here  */
+.contact_section {
+    background-color: #161420;
+    color: white;
+    padding: 5rem 2rem;
+}
+
+.contact_container {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.contact_information {
+    width: 39%;
+    margin-right: 2rem;
+    padding: 2rem;
+    box-shadow: -2px 0px 6px 5px #040404;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: auto;
+}
+
+.contact_image {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.contact_image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 8px;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.contact_image:hover img {
+    transform: scale(1.2);
+}
+
+.contact_text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contact_text h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.contact_text p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+.contact_text ul {
+    list-style: none;
+}
+
+.contact_text ul li {
+    padding: 0.5rem 0;
+}
+
+.contact_text ul li span {
+    display: inline-block;
+    font-size: 1rem;
+    color: #ccc;
+    font-weight: 500;
+    margin-right: 0.1rem;
+}
+
+.contact_text ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(235, 232, 232);
+    font-weight: 500;
+    margin-right: 0.1rem;
+    transition: all .5s;
+    position: relative;
+}
+
+.contact_text ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff5200;
+    transition: all .5s ease-in-out;
+}
+
+.contact_text ul li a:hover {
+    color: #ff5200;
+}
+
+.contact_text ul li a:hover::after {
+    color: #ff5200;
+    width: 100%;
+}
+
+.contact_text h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ccc;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.contact_social {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact_social a {
+    box-shadow: -2px 0px 6px 5px #040404;
+}
+
+.Contact_message {
+    width: 60%;
+    height: auto;
+    box-shadow: -2px 0px 6px 5px #040404;
+    border-radius: 5px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.intput_phone_num {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Phone_input label {
+    display: block;
+    font-weight: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.her_input {
+    width: 100%;
+    padding: 1rem;
+    background: none;
+    outline: none;
+    border: 1rem solid #070a1c;
+}
+
+/* contact_section stylesheet end here  */
