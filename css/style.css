@@ -980,3 +980,119 @@ span {
 }
 
 /* contact_section stylesheet end here  */
+/* footer_area stylesheet start  */
+.footer_area {
+    background-color: #161420;
+    color: white;
+    padding: 5rem 2rem;
+}
+
+.footer_wrraper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer_profile {
+    width: 120px;
+    height: 120px;
+}
+
+.footer_profile::before {
+    inset: -4px 40px;
+}
+
+.footer-content h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.footer-content p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    color: #ccc;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.copy-right {
+    padding: 3rem 0 0rem 0;
+    box-sizing: border-box;
+}
+
+.copy-right-wrraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.footer-content ul li a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #c9c9c9;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer-content ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.1rem;
+    bottom: 0;
+    left: 0;
+    background-color: #ff5200;
+    transition: all .5s ease-in-out;
+}
+
+.footer-content ul li a:hover::after {
+    width: 100%;
+}
+
+.footer-contact ul li a:hover::after {
+    display: none;
+}
+
+.footer-contact ul li span {
+    margin-right: 8px;
+    color: #ff5200;
+}
+
+.copy-right-wrraper p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.copyRight_menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.copyRight_menu ul li a {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0;
+    transition: all .5s ease;
+}
+
+.copyRight_menu ul li a:hover {
+    color: #ff5200;
+    letter-spacing: 0.1rem;
+}
+
+/* footer_area stylesheet end  */
